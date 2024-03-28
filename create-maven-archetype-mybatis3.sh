@@ -1,4 +1,6 @@
 #!/bin/sh
+set -e
+
 sh change-infra.sh MyBatis3
 sed -i -e "s/macchinetta-web-blank-noorm-thymeleaf/macchinetta-web-blank-thymeleaf/g" pom.xml
 sed -i -e "s/macchinetta-web-blank-noorm-thymeleaf/macchinetta-web-blank-thymeleaf/g" create-maven-archetype.sh
